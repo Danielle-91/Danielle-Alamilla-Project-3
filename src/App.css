@@ -14,7 +14,7 @@ html{
 }
 
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* TYPOGRAPHY */
@@ -26,6 +26,18 @@ h1{
   color:#0a2c83;
   font-size: 6rem;
   letter-spacing: 0.5px;
+}
+
+.howTo p{
+  font-family: 'Shanti', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 35px;
+}
+
+.resultPage li{
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 /* HEADER STYLING */
@@ -56,15 +68,10 @@ main{
 
 /* HOW-TO SECTION STYLING */
 .howTo p{
-  font-family: 'Shanti', sans-serif;
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  line-height: 35px;
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 .howTo span{
@@ -93,14 +100,57 @@ button{
   border: none;
   border-radius: 10px;
   background: #0a2c83;
-  color: white;
+  color: #fceded;
   width: 120px;
   height: 50px;
   padding: 10px;
 }
 
+label{
+  text-align: center;
+}
+
+/* RESULT PAGE STYLING */
+
+.resultPage{
+  background:#fad281;
+  height: 100vh;
+}
+
+.resultPage h2{
+  text-align: center;
+}
+.results{
+  background: #fceded;
+  height: 80vh;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.results ul{
+  border: 2px solid green;
+  list-style-type: none;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+}
+
+.results ul:first-child{
+  padding-top: 30px;
+
+}
+.songTitle{
+  margin-left: 0;
+}
+
+.artist{
+  padding-left: 700px;
+}
 /* FOOTER STYLING */
-footer{
+/* footer{
   height: 60px;
   background: #0a2c83;
   background-size: cover;
@@ -121,4 +171,4 @@ footer a{
 
 footer a:hover{
   color: #ea583e;
-}
+} */
