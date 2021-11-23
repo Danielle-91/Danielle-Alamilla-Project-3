@@ -59,9 +59,9 @@ function App() {
         <Mixtape tracks = {tracks}/>
       </main>
 
-      {/* <footer>
+      <footer>
         <p>Created at <a href="https://junocollege.com/">Juno College of Technology</a></p>
-      </footer> */}
+      </footer>
     </div>
     )}
 

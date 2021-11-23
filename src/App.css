@@ -160,7 +160,7 @@ label{
 .results{
   background: #f8f2f2;
   border-radius: 10px;
-  height: 100vh;
+  height: 600px;
   width: 80%;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -180,6 +180,8 @@ label{
 .trackContainer ul li{
   border-bottom: 2px solid black;
   line-height: 20px;
+  display: block;
+  text-align: left;
 }
 
 .trackContainer ul li span{
@@ -188,11 +190,11 @@ label{
   text-align: right;
 }
 /* FOOTER STYLING */
-/* footer{
-  height: 60px;
-  background: #0a2c83;
-  background-size: cover;
-  padding: 5px 0;
+footer{
+  height: auto;
+  background-color: #0a2c83;
+  /* background-size: cover; */
+  padding: 10px 0;
 }
 
 footer p{
@@ -209,4 +211,4 @@ footer a{
 
 footer a:hover{
   color: #ea583e;
-} */
+}
