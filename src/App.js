@@ -1,28 +1,42 @@
 import './App.css';
 import {useEffect, useState} from 'react';
 import axios from 'axios';
-import SearchBar from './SearchBar';
 import Mixtape from './Mixtape';
+import SearchBar from './SearchBar';
 
 function App() {
   const [tracks, setTracks] = useState([]);
   const [query, setQuery] = useState("");
+
   useEffect(() =>{
+    getTape();
+  }, [])
+
+  const handleUpdateQuery = (event) => {
+    setQuery(event.target.value);
+  }
+
+  const handleSearchMusician = (event) => {
+    event.preventDefault();
+    getTape(query)
+  }
+  
+  const getTape = (artist, song) => {
     axios({
       url: `https://itunes.apple.com/search?`,
       method: "GET",
       dataResponse: "JSON",
       params: {
-        term: "",
+        term: artist,
         limit: 10,
-        attribute: "allArtistTerm"
-      },
-    }).then(results=>{
-      console.log(results.data.results);
+        kind: "song",
+        attribute: "allArtistTerm",
+      }
+    }).then(results => {
+      console.log(results.data.results)
       setTracks(results.data.results)
-    }) 
-  }, [])
-  
+    })
+  }
   return (
     <div className="App">
       <header>
@@ -36,31 +50,13 @@ function App() {
           </p>
           <SearchBar
           term={query} 
-          />
-          {/* <form action="submit">
-            <label htmlFor="tuneSearch">Search Here:</label>
-            <input type="text" name="search" id="search"/>
-            <button>Search</button>
-          </form> */}
+          updateTerm={handleUpdateQuery} 
+          searchMusician={handleSearchMusician}
+          tapeSongs={tracks.trackTitle}
+          /> 
         </section>
 
-
-        <section className="resultPage">
-          <h2>Your {tracks.artistName} Mixtape:</h2>
-          <div className="results">
-            <ul>
-                {tracks.map((songs) =>{
-                  return(
-
-                    <Mixtape
-                    artist={songs.artistName}
-                    song={songs.trackTitle} 
-                    />
-                  )
-                })}
-            </ul>
-          </div>
-        </section>
+        <Mixtape tracks = {tracks}/>
       </main>
 
       {/* <footer>
