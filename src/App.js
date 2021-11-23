@@ -21,7 +21,7 @@ function App() {
     getTape(query)
   }
   
-  const getTape = (artist, song) => {
+  const getTape = (artist) => {
     axios({
       url: `https://itunes.apple.com/search?`,
       method: "GET",
@@ -29,7 +29,6 @@ function App() {
       params: {
         term: artist,
         limit: 10,
-        kind: "song",
         attribute: "allArtistTerm",
       }
     }).then(results => {
@@ -46,7 +45,7 @@ function App() {
       <main>
         <section className="howTo">
           <p>Need workout motivation? Cooking music? Something to play on a boombox outside your crush’s window in the middle of the night? We’ve got you covered.  
-          <span>Search any artist or genre and we’ll provide 10 songs to turn into your very own mixtape:</span>
+          <span>Search any artist (e.g. Britney Spears, ABBA) and we’ll provide 10 songs to turn into your very own mixtape:</span>
           </p>
           <SearchBar
           term={query} 

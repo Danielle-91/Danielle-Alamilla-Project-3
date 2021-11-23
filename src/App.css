@@ -13,10 +13,6 @@ html{
   padding: 0;
 }
 
-.App {
-  /* text-align: center; */
-}
-
 /* TYPOGRAPHY */
 h1, h2, label, button, .resultsText, footer p{
   font-family: 'Rock Salt', cursive;
