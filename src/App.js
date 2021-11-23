@@ -49,7 +49,7 @@ function App() {
           <span>Search any artist or genre and we’ll provide 10 songs to turn into your very own mixtape:</span>
           </p>
           <SearchBar
-          term={query} 
+          term={query.toLowerCase()} 
           updateTerm={handleUpdateQuery} 
           searchMusician={handleSearchMusician}
           tapeSongs={tracks.trackTitle}
