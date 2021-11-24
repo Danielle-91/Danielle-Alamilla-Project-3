@@ -110,7 +110,8 @@ button{
   padding: 10px;
 }
 
-button:focus, 
+button:hover,
+button:focus,
 button:focus-within{
   background-color: #fceded;
   color: #0a2c83;
