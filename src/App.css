@@ -194,16 +194,17 @@ label{
   line-height: 20px;
 }
 
-.trackContainer ul li{
+.trackContainer li{
   border-bottom: 2px solid black;
   line-height: 20px;
   display: block;
   text-align: left;
 }
 
-.trackContainer ul li span{
+.trackContainer span{
   display: block;
   text-align: right;
+  font-weight: bold;
 }
 /* FOOTER STYLING */
 footer{
@@ -285,15 +286,15 @@ footer a:focus-within{
     margin-top: 350px;
   }
 
+  .resultPage{
+    height: 80vh;
+  }
   .results{
     width: 100%;
+    height: 85%;
   }
   .trackContainer li{
     font-size: 0.8rem;
-  }
-
-  .trackContainer span{
-    font-weight: bold;
   }
 
   footer{
