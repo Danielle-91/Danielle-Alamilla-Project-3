@@ -49,6 +49,7 @@ header {
   background-image: url(./mixtape-hero.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
   max-width: 1600px;
   width: 100%;
