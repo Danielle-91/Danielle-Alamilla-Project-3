@@ -184,7 +184,7 @@ label{
   margin-bottom: 30px;
 }
 
-.results ul{
+.trackContainer ul{
   margin-top: 5px;
   list-style-type: none;
   height: 62vh;
@@ -232,3 +232,72 @@ footer a:focus-within{
 
 /* RESPONSIVE STYLING */
 
+@media (max-width: 940px){
+  header{
+    height: 70vh;
+  }
+  h1{
+    font-size: 4.5rem;
+    margin-top: 500px;
+  }
+
+  .resultPage{
+    height: 80vh;
+  }
+
+  h2{
+    margin-top: 50px;
+  }
+
+  .results{
+    margin-top: 50px;
+    width: 90%;
+    height: 670px;
+  }
+
+  footer{
+    height: 7vh;
+  }
+}
+
+@media(max-width: 768px){
+  header{
+    height: 60vh;
+  }
+  h1{
+    font-size: 3.7rem;
+    margin-top: 450px;
+  }
+
+  .trackContainer li{
+    font-size: 0.9rem;
+  }
+}
+
+@media(max-width: 480px){
+  header{
+    height: 50vh;
+  }
+
+  h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 350px;
+  }
+
+  .results{
+    width: 100%;
+  }
+  .trackContainer li{
+    font-size: 0.8rem;
+  }
+
+  .trackContainer span{
+    font-weight: bold;
+  }
+
+  footer{
+    font-size: 0.8rem;
+    height: 8vh;
+  }
+}

@@ -38,7 +38,7 @@ function App() {
       params: {
         term: artist,
         limit: 10,
-        attribute: "allArtistTerm",
+        attribute: "allArtistTerm"
       }
     }).then(results => {
       console.log(results.data.results)
