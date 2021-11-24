@@ -2,7 +2,10 @@ function Mixtape({tracks}) {
     return(
         <section className="resultPage">
             {tracks.length === 0 ? (
-                <h2>Sorry we couldn't find that artist! Please try again</h2>
+                <>
+                <h2>Sorry we couldn't find that artist!</h2>
+                <p class="reminder">Remember to use capitalization in your search ("Adele", rather than "adele" for example)</p>
+                </>
             ) : (
                 <>
                     <h2>Your Mixtape:</h2>
