@@ -19,7 +19,6 @@ h1, h2, label, button, .resultsText, footer p{
 }
 
 h1{
-  color:#0a2c83;
   font-size: 6rem;
   letter-spacing: 0.5px;
 }
@@ -57,6 +56,7 @@ header {
 }
 
 h1{
+  color:#0a2c83;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,12 +140,12 @@ label{
 
 .sideA{
   width: 50%;
-  
 }
 
 .sideB{
   width: 50%;
 }
+
 .tapeStyles p:first-child{
   width: 40px;
   border-radius: 50%;
@@ -207,6 +207,7 @@ label{
   text-align: right;
   font-weight: bold;
 }
+
 /* FOOTER STYLING */
 footer{
   height: auto;
@@ -238,6 +239,7 @@ footer a:focus-within{
   header{
     height: 70vh;
   }
+
   h1{
     font-size: 4.5rem;
     margin-top: 600px;
@@ -266,6 +268,7 @@ footer a:focus-within{
   header{
     height: 60vh;
   }
+  
   h1{
     font-size: 3.7rem;
     margin-top: 540px;

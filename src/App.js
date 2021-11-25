@@ -41,7 +41,6 @@ function App() {
         attribute: "allArtistTerm"
       }
     }).then(results => {
-      console.log(results.data.results)
       setTracks(results.data.results)
     })
   }
