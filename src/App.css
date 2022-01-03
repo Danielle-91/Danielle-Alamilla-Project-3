@@ -59,7 +59,7 @@ h1{
   color:#0a2c83;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   margin-top: 405px;
 }
 
